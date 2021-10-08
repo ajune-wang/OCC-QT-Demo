@@ -1,0 +1,3 @@
+[submodule "OCC-Lib"]
+	path = OCC-Lib
+	url = https://github.com/Ajune-Wang/OCC-Lib.git
