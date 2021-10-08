@@ -1,0 +1,64 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/copy.png</file>
+        <file>images/cut.png</file>
+        <file>images/new.png</file>
+        <file>images/open.png</file>
+        <file>images/paste.png</file>
+        <file>images/save.png</file>
+        <file>Resources/ICON_CANCLE.png</file>
+        <file>Resources/ICON_SURE.png</file>
+        <file>images/saveas.png</file>
+        <file>images/app.png</file>
+        <file>images/back.png</file>
+        <file>Resources/icon-circleupdate.png</file>
+        <file>Resources/icon-update.png</file>
+    </qresource>
+    <qresource prefix="/OccView">
+        <file>Resources/OccView/view_axo.png</file>
+        <file>Resources/OccView/view_back.png</file>
+        <file>Resources/OccView/view_bottom.png</file>
+        <file>Resources/OccView/view_comp_off.png</file>
+        <file>Resources/OccView/view_comp_on.png</file>
+        <file>Resources/OccView/view_fitall.png</file>
+        <file>Resources/OccView/view_fitarea.png</file>
+        <file>Resources/OccView/view_front.png</file>
+        <file>Resources/OccView/view_glpan.png</file>
+        <file>Resources/OccView/view_left.png</file>
+        <file>Resources/OccView/view_pan.png</file>
+        <file>Resources/OccView/view_reset.png</file>
+        <file>Resources/OccView/view_right.png</file>
+        <file>Resources/OccView/view_rotate.png</file>
+        <file>Resources/OccView/view_top.png</file>
+        <file>Resources/OccView/view_zoom.png</file>
+        <file>Resources/OccView/cursor_rotate.png</file>
+        <file>Resources/OccView/cursor_zoom.png</file>
+        <file>Resources/OccView/raytrace_antialiasing.png</file>
+        <file>Resources/OccView/raytrace_raytracing.png</file>
+        <file>Resources/OccView/raytrace_reflections.png</file>
+        <file>Resources/OccView/raytrace_shadows.png</file>
+        <file>Resources/OccView/view_globalpan.png</file>
+    </qresource>
+    <qresource prefix="/Sel">
+        <file>Resources/Sel/SEL_Edge.png</file>
+        <file>Resources/Sel/SEL_Face.png</file>
+        <file>Resources/Sel/SEL_Shape.png</file>
+        <file>Resources/Sel/SEL_Solid.png</file>
+        <file>Resources/Sel/SEL_Vertex.png</file>
+    </qresource>
+    <qresource prefix="/AIS">
+        <file>Resources/Ais/tool_Attach.png</file>
+        <file>Resources/Ais/tool_delete.png</file>
+        <file>Resources/Ais/tool_Detach.png</file>
+        <file>Resources/Ais/tool_displayall.png</file>
+        <file>Resources/Ais/tool_erase.png</file>
+        <file>Resources/Ais/tool_eraseall.png</file>
+        <file>Resources/Ais/tool_material.png</file>
+        <file>Resources/Ais/tool_objcolor.png</file>
+        <file>Resources/Ais/tool_selcolor.png</file>
+        <file>Resources/Ais/tool_shading.png</file>
+        <file>Resources/Ais/tool_transparency.png</file>
+        <file>Resources/Ais/tool_wireframe.png</file>
+        <file>Resources/Ais/trans.png</file>
+    </qresource>
+</RCC>

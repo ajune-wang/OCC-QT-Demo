@@ -1,0 +1,59 @@
+#设置
+
+OCCIncludePath =    $${PWD}/../../OCC-Lib/inc
+OCCLibPath =        $${PWD}/../../OCC-Lib/MinGW_win64_gcc/lib
+
+INCLUDEPATH += $$OCCIncludePath
+
+win32:  LIBS += -L$$OCCLibPath/ -llibTKBin.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKBinL.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKBinTObj.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKBinXCAF.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKBO.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKBool.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKBRep.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKCAF.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKCDF.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKernel.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKFeat.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKFillet.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKG2d.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKG3d.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKGeomAlgo.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKGeomBase.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKHLR.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKIGES.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKLCAF.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKMath.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKMesh.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKMeshVS.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKOffset.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKOpenGl.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKPrim.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKRWMesh.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKService.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKShHealing.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKStd.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKStdL.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKSTEP.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKSTEP209.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKSTEPAttr.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKSTEPBase.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKSTL.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKTObj.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKTopAlgo.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKV3d.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKVCAF.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKVRML.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKXCAF.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKXDEIGES.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKXDESTEP.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKXMesh.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKXml.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKXmlL.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKXmlTObj.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKXmlXCAF.dll
+win32:  LIBS += -L$$OCCLibPath/ -llibTKXSBase.dll
+
+INCLUDEPATH += $$OCCLibPath
+DEPENDPATH += $$OCCLibPath

@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="_Frame">
+      <UniqueIdentifier>{1375a0b9-9c03-428b-a166-1e49f5860683}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OCCT（自定义）">
+      <UniqueIdentifier>{a13adee4-7caa-4f3f-9331-6c5a8aedea31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OCCT（自定义）\View">
+      <UniqueIdentifier>{f7041ee9-87ed-417c-9a54-3a1cae6307df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Frame\mdichild">
+      <UniqueIdentifier>{32a79917-fc25-4cd8-95a0-abb9452e789d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Frame\docview">
+      <UniqueIdentifier>{b2cdbf4a-e755-4c03-8d3d-bed1527a3c8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Frame\QTGUI">
+      <UniqueIdentifier>{c9b493b3-df3b-4697-860d-b279642382e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{bdfe0279-0465-4017-ba85-c1c89692c8d0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="../../src/MyDocument.cpp">
+      <Filter>_Frame\docview</Filter>
+    </ClCompile>
+    <ClCompile Include="../../src/MyViewer.cpp">
+      <Filter>_Frame\docview</Filter>
+    </ClCompile>
+    <ClCompile Include="../../src/mdichild.cpp">
+      <Filter>_Frame\mdichild</Filter>
+    </ClCompile>
+    <ClCompile Include="../../src/mdichild_action1.cpp">
+      <Filter>_Frame\mdichild</Filter>
+    </ClCompile>
+    <ClCompile Include="../../src/mdichild_action2.cpp">
+      <Filter>_Frame\mdichild</Filter>
+    </ClCompile>
+    <ClCompile Include="../../src/mdichild_init.cpp">
+      <Filter>_Frame\mdichild</Filter>
+    </ClCompile>
+    <ClCompile Include="../../src/mdichild_slots.cpp">
+      <Filter>_Frame\mdichild</Filter>
+    </ClCompile>
+    <ClCompile Include="../../src/QShapeExportUI.cpp">
+      <Filter>_Frame\QTGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="../../src/QShapeImportUI.cpp">
+      <Filter>_Frame\QTGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="../../src/Msg.cpp">
+      <Filter>_Frame\QTGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="../../src/MsgUI.cpp">
+      <Filter>_Frame\QTGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="../../src/MainWindow.cpp">
+      <Filter>_Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="../../src/MainWindow2.cpp">
+      <Filter>_Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="../../src/main.cpp">
+      <Filter>_Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="../../src/OCCT_GraphDriver.cpp">
+      <Filter>OCCT（自定义）</Filter>
+    </ClCompile>
+    <ClCompile Include="../../src/OCCT_ShapeExport.cpp">
+      <Filter>OCCT（自定义）</Filter>
+    </ClCompile>
+    <ClCompile Include="../../src/OCCT_ShapeImport.cpp">
+      <Filter>OCCT（自定义）</Filter>
+    </ClCompile>
+    <ClCompile Include="../../src/OcctView.cxx">
+      <Filter>OCCT（自定义）\View</Filter>
+    </ClCompile>
+    <ClCompile Include="../../src/OcctWindow.cxx">
+      <Filter>OCCT（自定义）\View</Filter>
+    </ClCompile>
+    <ClCompile Include="../../src/GUI_Message.cpp">
+      <Filter>_Frame\QTGUI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="../../src/mdichild.h">
+      <Filter>_Frame\mdichild</Filter>
+    </QtMoc>
+    <QtMoc Include="../../src/GUI_Message.h">
+      <Filter>_Frame\QTGUI</Filter>
+    </QtMoc>
+    <QtMoc Include="../../src/MainWindow.h">
+      <Filter>_Frame</Filter>
+    </QtMoc>
+    <QtMoc Include="../../src/OcctView.h">
+      <Filter>OCCT（自定义）\View</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="../../src/MyDocument.h">
+      <Filter>_Frame\docview</Filter>
+    </ClInclude>
+    <ClInclude Include="../../src/MyViewer.h">
+      <Filter>_Frame\docview</Filter>
+    </ClInclude>
+    <ClInclude Include="../../src/QShapeImportUI.h">
+      <Filter>_Frame\QTGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="../../src/QShapeExportUI.h">
+      <Filter>_Frame\QTGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="../../src/Msg.h">
+      <Filter>_Frame\QTGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="../../src/MsgUI.h">
+      <Filter>_Frame\QTGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="../../src/OCCT_GraphDriver.h">
+      <Filter>OCCT（自定义）</Filter>
+    </ClInclude>
+    <ClInclude Include="../../src/OCCT_ShapeExport.h">
+      <Filter>OCCT（自定义）</Filter>
+    </ClInclude>
+    <ClInclude Include="../../src/OCCT_ShapeImport.h">
+      <Filter>OCCT（自定义）</Filter>
+    </ClInclude>
+    <ClInclude Include="../../src/OCCT_ShapeList.h">
+      <Filter>OCCT（自定义）</Filter>
+    </ClInclude>
+    <ClInclude Include="../../src/OCCT_Utf8String.h">
+      <Filter>OCCT（自定义）</Filter>
+    </ClInclude>
+    <ClInclude Include="../../src/OCCT_Utf8StringList.h">
+      <Filter>OCCT（自定义）</Filter>
+    </ClInclude>
+    <ClInclude Include="../../src/OcctWindow.h">
+      <Filter>OCCT（自定义）\View</Filter>
+    </ClInclude>
+    <ClInclude Include="../../src/ComplainUtf8.h">
+      <Filter>_Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="../../src/Icon.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="../../src/mdi.qrc">
+      <Filter>Resource</Filter>
+    </QtRcc>
+  </ItemGroup>
+</Project>

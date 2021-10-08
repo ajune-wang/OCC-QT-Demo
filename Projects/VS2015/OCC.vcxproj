@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4DCC0893-61D1-448D-9DA4-0D26478A5272}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">8.1</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>msvc2015_64</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>msvc2015_64</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+    <Import Project="OCCT_PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+    <Import Project="OCCT_PropertySheet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <OutDir>$(SolutionDir)..\_Bin\$(ProjectName)\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\_Temp\$(ProjectName)\$(Platform)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutDir>$(SolutionDir)..\_Bin\$(ProjectName)\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\_Temp\$(ProjectName)\$(Platform)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="../../src/MyDocument.cpp" />
+    <ClCompile Include="../../src/GUI_Message.cpp" />
+    <ClCompile Include="../../src/MainWindow2.cpp" />
+    <ClCompile Include="../../src/MyViewer.cpp" />
+    <ClCompile Include="../../src/mdichild.cpp" />
+    <ClCompile Include="../../src/mdichild_action1.cpp" />
+    <ClCompile Include="../../src/mdichild_action2.cpp" />
+    <ClCompile Include="../../src/mdichild_init.cpp" />
+    <ClCompile Include="../../src/mdichild_slots.cpp" />
+    <ClCompile Include="../../src/Msg.cpp" />
+    <ClCompile Include="../../src/MsgUI.cpp" />
+    <ClCompile Include="../../src/OcctView.cxx" />
+    <ClCompile Include="../../src/OcctWindow.cxx" />
+    <ClCompile Include="../../src/OCCT_GraphDriver.cpp" />
+    <ClCompile Include="../../src/OCCT_ShapeExport.cpp" />
+    <ClCompile Include="../../src/OCCT_ShapeImport.cpp" />
+    <ClCompile Include="../../src/QShapeExportUI.cpp" />
+    <ClCompile Include="../../src/QShapeImportUI.cpp" />
+    <QtRcc Include="../../src/mdi.qrc">
+      <SubType>Designer</SubType>
+    </QtRcc>
+    <QtMoc Include="../../src/MainWindow.h" />
+    <ClCompile Include="../../src/MainWindow.cpp" />
+    <ClCompile Include="../../src/main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="../../src/ComplainUtf8.h" />
+    <ClInclude Include="../../src/MyDocument.h" />
+    <ClInclude Include="../../src/QShapeExportUI.h" />
+    <QtMoc Include="../../src/GUI_Message.h" />
+    <ClInclude Include="../../src/Icon.h" />
+    <QtMoc Include="../../src/mdichild.h" />
+    <ClInclude Include="../../src/MyViewer.h" />
+    <ClInclude Include="../../src/Msg.h" />
+    <ClInclude Include="../../src/MsgUI.h" />
+    <QtMoc Include="../../src/OcctView.h" />
+    <ClInclude Include="../../src/OcctWindow.h" />
+    <ClInclude Include="../../src/OCCT_GraphDriver.h" />
+    <ClInclude Include="../../src/OCCT_ShapeExport.h" />
+    <ClInclude Include="../../src/OCCT_ShapeImport.h" />
+    <ClInclude Include="../../src/OCCT_ShapeList.h" />
+    <ClInclude Include="../../src/OCCT_Utf8String.h" />
+    <ClInclude Include="../../src/OCCT_Utf8StringList.h" />
+    <ClInclude Include="../../src/QShapeImportUI.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
